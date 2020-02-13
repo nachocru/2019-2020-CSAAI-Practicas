@@ -1,0 +1,11 @@
+body {
+  background-image: url("fondo1.jpg");
+  color: white;
+}
+p {
+  padding: 10px;
+  border: solid;
+  border-color: green;
+  margin: 20px;
+  background-color: deepskyblue;
+}

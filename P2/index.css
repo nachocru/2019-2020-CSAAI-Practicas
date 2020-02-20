@@ -1,0 +1,24 @@
+body {
+  padding: 10px;
+  border: solid;
+  border-color: black;
+  margin: 20px;
+  background-color: blue;
+}
+
+button {
+  padding: 10px;
+  border: solid;
+  border-color: black;
+  margin: 10px;
+  background-color: silver;
+  width: 50px;
+}
+p {
+  padding: 10px;
+  border: solid;
+  border-color: black;
+  margin: 10px;
+  background-color: darkKhaki;
+  width: 320px;
+}

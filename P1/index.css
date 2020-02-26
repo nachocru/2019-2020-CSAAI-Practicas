@@ -7,5 +7,44 @@ p {
   border: solid;
   border-color: green;
   margin: 20px;
-  background-color: deepskyblue;
+  color: black;
+  background-color: cornSilk;
+}
+ td {
+   padding: 10px;
+   border: solid;
+   border-width: 5px;
+   border-color: darkgreen;
+   margin: 30px;
+   color: black;
+   background-color: darkSeaGreen;
+
+ }
+ div {
+
+   padding: 10px;
+   border: solid;
+   color: black;
+   border-color: dodgerblue;
+   margin: 30px;
+   background-color: lightblue;
+ }
+ h1 {
+   padding: 10px;
+   border: solid;
+   border-width: 7px;
+   color: royalblue;
+   border-color: darkgoldenrod;
+   margin: 30px;
+   background-color: Gold;
+ }
+.special {
+  border-color: khaki;
+}
+.special2 {
+  border: none;
+}
+.special3 {
+  border: none;
+  background-color: lightblue;
 }

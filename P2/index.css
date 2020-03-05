@@ -1,12 +1,7 @@
-body {
-  padding: 10px;
-  border: solid;
-  border-color: black;
-  margin: 20px;
-  background-color: blue;
-}
 
 button {
+  border-radius: 6px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.16);
   padding: 10px;
   border: solid;
   border-color: black;
@@ -15,10 +10,19 @@ button {
   width: 50px;
 }
 p {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.16);
   padding: 10px;
   border: solid;
   border-color: black;
-  margin: 10px;
+  margin: 20px;
   background-color: darkKhaki;
   width: 320px;
+}
+.general {
+  padding: 10px;
+  border: solid;
+  border-color: black;
+  margin: 20px;
+  width: 400px;
+  background-color: MediumTurquoise;
 }

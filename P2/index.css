@@ -22,7 +22,15 @@ p {
   padding: 10px;
   border: solid;
   border-color: black;
-  margin: 20px;
+  margin: 300px;
   width: 400px;
   background-color: MediumTurquoise;
+}
+
+body {
+  background-image: url("imagen.jpg");
+  background-repeat: no-repeat;
+  height:  100%;
+  width: 100%;
+  color: white;
 }

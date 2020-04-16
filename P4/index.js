@@ -13,7 +13,7 @@ video2.height=100;
 const video3 = document.getElementById("video3")
 video3.width=200;  //-- Tamaño de la pantalla de video
 video3.height=100;
-
+var iniciado = false;
 
 
 //-- Imagen estática a mostrar cuando el video no
@@ -28,31 +28,63 @@ video3.src="https://gsyc.urjc.es/jmplaza/csaai/realizador-fuente3.mp4"
 const play1 = document.getElementById("Video1")
 const play2 = document.getElementById("Video2")
 const play3 = document.getElementById("Video3")
-const iniciar = document.getElementById("Inicio")
+const iniciarNormal = document.getElementById("Inicio1")
+const iniciarAutomatico = document.getElementById("Inicio2")
 
 //-- Función de retrollamada del botón de ver
-iniciar.onclick = () => {
-  console.log("Click iniciar");
+iniciarNormal.onclick = () => {
+  console.log("Click iniciar Normal");
   video1.play();
   video2.play();
   video3.play();
+  iniciado = true;
+};
+
+iniciarAutomatico.onclick = () => {
+  // En proceso
+  console.log("Click iniciar Automático");
+  video1.play();
+  video2.play();
+  video3.play();
+  var d = new Date();
+  var n = d.getSeconds();
+  console.log(n);
+  i = 0;
+  while (i < 300) {
+      //counter = video1.currentTime;
+      //if (counter % 2 == 0){
+        //console.log('hola');
+      //}
+      i += 1;
+  }
+  console.log('end');
+
 };
 
 play1.onclick = () => {
-  console.log("Click vídeo 1");
-  videoMain.src = video1.src;
-  videoMain.play();
+  if (iniciado == true){
+    console.log("Click vídeo 1");
+    videoMain.src = video1.src;
+    videoMain.currentTime = video1.currentTime;
+    videoMain.play();
+  }
 };
 
 play2.onclick = () => {
-  console.log("Click vídeo 2");
-  videoMain.src = video2.src;
-  videoMain.play();
+  if (iniciado == true){
+    console.log("Click vídeo 2");
+    videoMain.src = video2.src;
+    videoMain.currentTime = video2.currentTime;
+    videoMain.play();
+  }
 };
 play3.onclick = () => {
-  console.log("Click vídeo 3");
-  videoMain.src = video3.src;
-  videoMain.play();
+  if (iniciado == true){
+    console.log("Click vídeo 3");
+    videoMain.src = video3.src;
+    videoMain.currentTime = video3.currentTime;
+    videoMain.play();
+  }
 };
 //-- Funcion de retrollamada del boton de parar
 //stop.onclick = () => {

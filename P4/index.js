@@ -14,7 +14,7 @@ const video3 = document.getElementById("video3")
 video3.width=200;  //-- Tamaño de la pantalla de video
 video3.height=100;
 var iniciado = false;
-
+var controlador = 1;
 
 //-- Imagen estática a mostrar cuando el video no
 //-- ha arrancado
@@ -40,25 +40,37 @@ iniciarNormal.onclick = () => {
   iniciado = true;
 };
 
+function contador() {
+  if ( controlador == 1){
+    console.log("Click vídeo 1");
+    videoMain.src = video1.src;
+    videoMain.currentTime = video1.currentTime;
+    videoMain.play();
+    controlador = 2;
+  } else if(controlador == 2){
+    console.log("Click vídeo 2");
+    videoMain.src = video2.src;
+    videoMain.currentTime = video2.currentTime;
+    videoMain.play();
+    controlador = 3;
+  } else {
+    console.log("Click vídeo 3");
+    videoMain.src = video3.src;
+    videoMain.currentTime = video3.currentTime;
+    videoMain.play();
+    controlador = 1;
+  }
+
+}
+
 iniciarAutomatico.onclick = () => {
   // En proceso
   console.log("Click iniciar Automático");
   video1.play();
   video2.play();
   video3.play();
-  var d = new Date();
-  var n = d.getSeconds();
-  console.log(n);
-  i = 0;
-  while (i < 300) {
-      //counter = video1.currentTime;
-      //if (counter % 2 == 0){
-        //console.log('hola');
-      //}
-      i += 1;
-  }
-  console.log('end');
-
+  contador();
+  window.setInterval('contador()',2000);
 };
 
 play1.onclick = () => {

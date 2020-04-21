@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Práctica 5</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <a>Imagen original</a>
+    <a>Imagen manipulada</a>
+    <table >
+      <tbody>
+        <tr style="left:200px">
+          <td >
+            <img src="imagen.jpg" id="imagesrc" >
+          </td>
+          <td>
+            <canvas id="canvas"></canvas>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+    <p>Establece el umbral de rojo:</p>
+    <input type="range" id="deslizador" min="0" max="255" value="255"/>
+    <p id="range_value">00</p>
+  </body>
+</html>

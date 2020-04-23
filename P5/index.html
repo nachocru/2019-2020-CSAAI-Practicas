@@ -7,25 +7,46 @@
     <script src="index.js" defer></script>
   </head>
   <body>
-    <a>Imagen original</a>
-    <a>Imagen manipulada</a>
+
+
     <table >
-      <tbody>
-        <tr style="left:200px">
-          <td >
-            <img src="imagen.jpg" id="imagesrc" >
-          </td>
-          <td>
-            <canvas id="canvas"></canvas>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+      <td>
+        <h2>Imagen original</h2>
+        <p class="special">
+          <img src="imagen.jpg" id="imagesrc" >
+        </p>
+      </td>
+      <td>
+        <h2>Imagen manipulada</h2>
+        <p class="special">
+          <canvas id="canvas"></canvas>
+        </p>
+      </td>
+    <table >
 
 
+    <button id="Grises" style="margin-left: 350px">Grises</button>
+    <button id="Colores" style="margin-left: 50px">Colores</button>
+    <br><br/>
 
-    <p>Establece el umbral de rojo:</p>
-    <input type="range" id="deslizador" min="0" max="255" value="255"/>
-    <p id="range_value">00</p>
+    <br>
+    <b style="margin-left: 330px;">Rojo</b>
+    <input style="margin-left:10px;" type="range" id="deslizador_R" min="0" max="255" value="255">
+    <a style="margin-left: 10px;" id="range_value_R">00</a>
+    <br>
+
+    <br>
+    <b style="margin-left: 330px;">Verde</b>
+    <input style="margin-left:10px;" type="range" id="deslizador_G" min="0" max="255" value="255">
+    <a style="margin-left: 10px;" id="range_value_G">00</a>
+    <br>
+
+    <br>
+    <b style="margin-left: 330px;">Azul</b>
+    <input style="margin-left:10px;" type="range" id="deslizador_B" min="0" max="255" value="255">
+    <a style="margin-left: 10px;" id="range_value_B">00</a>
+    <br>
+
+
   </body>
 </html>

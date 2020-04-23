@@ -1,15 +1,17 @@
 body {
   background-color: grey;
 }
+
+h2 {
+  color: white;
+}
+
 td {
+  padding-left: 150px;
+}
+.special {
   border: solid;
   border-width: 5px;
   border-color: darkgreen;
   line-height:0;
-}
-a {
-  color: white;
-  margin-left: 60px;
-  margin-right: 200px;
-
 }

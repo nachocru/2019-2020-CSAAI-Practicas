@@ -1,0 +1,23 @@
+body {
+  background-color: grey;
+}
+h1 {
+  color: #FFF780;
+  font-family: arial;
+}
+
+.special2 {
+  border: solid;
+  padding:2px;
+  border-width: 5px;
+  width:180px;
+  border-color: darkgreen;
+}
+
+.special{
+  border-radius:5px;
+  border: 10px solid #0F6D6C;
+  padding:10px;
+  width:350px;
+  line-height:0;
+  }

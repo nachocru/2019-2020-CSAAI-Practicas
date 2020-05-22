@@ -1,8 +1,9 @@
 body {
   background-image: url("fondo1.jpg");
-  color: white;
 }
+
 p {
+  font-family: Arial;
   padding: 10px;
   border: solid;
   border-color: green;
@@ -10,18 +11,8 @@ p {
   color: black;
   background-color: cornSilk;
 }
- td {
-   padding: 10px;
-   border: solid;
-   border-width: 5px;
-   border-color: darkgreen;
-   margin: 30px;
-   color: black;
-   background-color: darkSeaGreen;
 
- }
- div {
-
+div {
    padding: 10px;
    border: solid;
    color: black;
@@ -29,7 +20,9 @@ p {
    margin: 30px;
    background-color: lightblue;
  }
+
  h1 {
+   font-family: monospace;
    padding: 10px;
    border: solid;
    border-width: 7px;
@@ -38,12 +31,22 @@ p {
    margin: 30px;
    background-color: Gold;
  }
+
+ li{
+   font-family: "Segoe IU", sans-serif;
+   font-size: x-large;
+ }
+
 .special {
+  font-family: "Consolas", monospace;
+  font-size: larger;
   border-color: khaki;
 }
+
 .special2 {
   border: none;
 }
+
 .special3 {
   border: none;
   background-color: lightblue;

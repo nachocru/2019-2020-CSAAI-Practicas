@@ -15,7 +15,7 @@ class Bola {
     this.y = 0;
 
     //-- Velocidad inicial de la bola
-    this.vx_ini = 6;
+    this.vx_ini = 3;
     this.vy_ini = 3;
 
     //-- Velocidad genérica de la bola
